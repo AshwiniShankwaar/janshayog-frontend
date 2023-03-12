@@ -1,0 +1,76 @@
+#Aim {
+    display: flex;
+    width: 87%;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 1px 1px 4px -1px rgba(96, 84, 95, 0.52);
+}
+
+#Aim img {
+    width: 15%;
+    height: 15%;
+}
+
+#problem {
+    padding: 10px;
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+}
+
+#problemstatement {
+    margin: 10px 10px auto;
+    padding: 20px 15px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 4px -1px rgba(96, 84, 95, 0.52);
+}
+
+#problemstatement img {
+    width: 200px;
+}
+
+#problemstatement #content {
+    width: 100%;
+}
+
+#solutionstatement {
+    margin: 10px 10px auto;
+    padding: 20px 15px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 4px -1px rgba(96, 84, 95, 0.52);
+}
+
+#solutionstatement img {
+    width: 230px;
+    height: 200px;
+}
+
+#solutionstatement #content {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #Aim {
+        flex-direction: column;
+        justify-content: center;
+        width: 92%;
+
+    }
+
+    #Aim img {
+        width: 50%
+    }
+
+    #problem {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}

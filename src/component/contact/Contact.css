@@ -1,0 +1,136 @@
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+#content {
+    width: 50%;
+}
+
+#contactform form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contactform form #contactInput {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+}
+
+#contactform form #contactInput:focus {
+    border-bottom-color: rgb(255, 81, 0);
+    border-bottom-width: 2px;
+    border-top-color: #ccc;
+    border-top-width: 1px;
+    border-right-color: #ccc;
+    border-right-width: 1px;
+    border-left-color: #ccc;
+    border-left-width: 1px;
+}
+
+#contactform form #message {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+    min-width: 425px;
+    min-height: 200px;
+}
+
+#contactform form #message:focus {
+    border-bottom-color: rgb(255, 81, 0);
+    border-bottom-width: 2px;
+    border-top-color: #ccc;
+    border-top-width: 1px;
+    border-right-color: #ccc;
+    border-right-width: 1px;
+    border-left-color: #ccc;
+    border-left-width: 1px;
+}
+
+#social {
+    margin: 1.2vh;
+}
+
+#social h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#social i {
+    font-size: 1.9rem;
+    margin: 10px 8px;
+    color: #FF6363;
+    transition: transform .2s;
+}
+
+#social i:hover {
+    transform: scale(1.5);
+}
+
+#contactform form button {
+    width: 150px;
+    height: 50px;
+    background: #FF6363;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: 0px;
+    transition: 0.3s ease-in-out;
+}
+
+#contactform form button:hover {
+    transform: scale(1.05)
+}
+
+#content h1,
+h3,
+p {
+    margin: 10px 0px;
+}
+
+@media screen and (max-width:1000px) {
+    #content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:764px) {
+    #footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #contactform form #message {
+        width: 80%;
+        min-width: 100%;
+    }
+
+    #contactform {
+        width: 80%;
+    }
+
+    #content {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:850px) {
+    #content {
+        font-size: 14px;
+    }
+}
