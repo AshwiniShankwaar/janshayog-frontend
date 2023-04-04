@@ -6,7 +6,7 @@ function Header(){
         <div id="headerContent">
             <h2>Heading text here</h2>
             <p>Some description text here</p>
-            <button><a href="#joinUs">Join Us</a></button>
+            <button><a href="http://localhost:3000/home/register">Join Us</a></button>
         </div>
         </div>
         </>

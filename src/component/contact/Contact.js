@@ -25,7 +25,7 @@ function Contact(){
                     <input type="text" name="email" id="contactInput" placeholder="Your email" required/>
                     <textarea id="message" name="message" placeholder="Your message" rows="6" cols="60"></textarea>
                     <button type="submit">
-                    <i class="fas fa-paper-plane"></i> Submit
+                    <i className="fas fa-paper-plane"></i> Submit
                     </button>
 
                 </form>

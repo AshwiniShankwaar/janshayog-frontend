@@ -5,12 +5,15 @@ function Navbar() {
   const [activeMenu, setActiveMenu] = useState("menu1");
   const [clicked, setclicked] = useState(false);
   function toggleMenu(menu) {
-    setActiveMenu( menu);
+    setActiveMenu(menu);
   }
 
   function updateClicked() {
     setclicked(!clicked);
   }
+
+
+
   return (
     <>
       <nav>
@@ -65,16 +68,24 @@ function Navbar() {
               </a>
             </li>
             <li>
-            <a 
-            href="#joinus"
-            className={activeMenu === "joinus" ? "active" : ""}
-                onClick={() => toggleMenu("joinus")}>Join Us</a>
+              <a
+                href="http://localhost:3000/home/register"
+                className={activeMenu === "joinus" ? "active" : ""}
+                onClick={() => {
+                  toggleMenu("joinus");
+                }}
+              >
+                Join Us
+              </a>
             </li>
             <li>
-            <a 
-            href="#login"
-            className={activeMenu === "login" ? "active" : ""}
-                onClick={() => toggleMenu("login")}>Log in</a>
+              <a
+                href="http://localhost:3000/home/login"
+                className={activeMenu === "login" ? "active" : ""}
+                onClick={() => toggleMenu("login")}
+              >
+                Log in
+              </a>
             </li>
           </ul>
         </div>
