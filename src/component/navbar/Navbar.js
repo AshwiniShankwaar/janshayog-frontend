@@ -69,7 +69,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="http://localhost:3000/home/register"
+                href="https://appjanshayog.azurewebsites.net/home/register"
                 className={activeMenu === "joinus" ? "active" : ""}
                 onClick={() => {
                   toggleMenu("joinus");
@@ -80,7 +80,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="http://localhost:3000/home/login"
+                href="https://appjanshayog.azurewebsites.net/home/login"
                 className={activeMenu === "login" ? "active" : ""}
                 onClick={() => toggleMenu("login")}
               >
