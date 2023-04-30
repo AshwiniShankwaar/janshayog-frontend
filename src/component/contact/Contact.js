@@ -4,12 +4,11 @@ function Contact(){
         <>
           <div id="footer">
             <div id="content">
-                <h1>name of the project</h1>
-                <h3>tagline of the project</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type 
-                    specimen book. </p>
+                <h1>JanSahyog</h1>
+                <h6>Bridging the gap between those who have and those who need.</h6>
+                <p>JanSahyog is a Web-based platform, which connect peoples those are in need with those who can help.
+                    
+                </p>
                     <div id="social">
                     <h2>Follow us at</h2>
                     <i className="fa-brands fa-facebook"></i>

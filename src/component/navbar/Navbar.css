@@ -9,6 +9,9 @@ nav {
     align-items: center;
     justify-content: center;
   }
+.logo{
+  height: 45px;
+}
   #navbar li {
     list-style: none;
     padding: 0 20px;

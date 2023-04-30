@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+import logo from "../../static/logo_long.png";
 import "./Navbar.css";
+import {BASE_URL} from '../../URL.js';
 function Navbar() {
   const [activeMenu, setActiveMenu] = useState("menu1");
   const [clicked, setclicked] = useState(false);
@@ -18,20 +19,20 @@ function Navbar() {
     <>
       <nav>
         <a href="#index">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo"/>
         </a>
         <div className="menu">
           <ul id="navbar" className={clicked ? "#navbar active" : "#navbar"}>
             <li>
               <a
-                href="#menu1"
-                className={activeMenu === "menu1" ? "active" : ""}
-                onClick={() => toggleMenu("menu1")}
+                href="#header"
+                className={activeMenu === "header" ? "active" : ""}
+                onClick={() => toggleMenu("header")}
               >
-                menu1
+                Home
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#menu2"
                 className={activeMenu === "menu2" ? "active" : ""}
@@ -39,37 +40,37 @@ function Navbar() {
               >
                 menu2
               </a>
-            </li>
+            </li> */}
             <li>
               <a
-                href="#menu3"
-                className={activeMenu === "menu3" ? "active" : ""}
-                onClick={() => toggleMenu("menu3")}
+                href="#overview"
+                className={activeMenu === "overview" ? "active" : ""}
+                onClick={() => toggleMenu("overview")}
               >
-                menu3
+                Overview
               </a>
             </li>
             <li>
               <a
-                href="#menu4"
-                className={activeMenu === "menu4" ? "active" : ""}
-                onClick={() => toggleMenu("menu4")}
+                href="#faq"
+                className={activeMenu === "FAQ" ? "active" : ""}
+                onClick={() => toggleMenu("FAQ")}
               >
-                menu4
+                FAQ
               </a>
             </li>
             <li>
               <a
-                href="#menu5"
-                className={activeMenu === "menu5" ? "active" : ""}
-                onClick={() => toggleMenu("menu5")}
+                href="#footer"
+                className={activeMenu === "contact" ? "active" : ""}
+                onClick={() => toggleMenu("contact")}
               >
-                menu5
+                Contact Us
               </a>
             </li>
             <li>
               <a
-                href="http://localhost:3000/home/register"
+                href={`${BASE_URL}register`}
                 className={activeMenu === "joinus" ? "active" : ""}
                 onClick={() => {
                   toggleMenu("joinus");
@@ -80,7 +81,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="http://localhost:3000/home/login"
+                href={`${BASE_URL}login`}
                 className={activeMenu === "login" ? "active" : ""}
                 onClick={() => toggleMenu("login")}
               >
